@@ -1,0 +1,222 @@
+/* Добавьте это в конец файла src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #202225;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid #4f545c;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logout-button {
+    background-color: #f04747;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.logout-button:hover {
+    background-color: #d84040;
+}
+
+.App-container {
+  background-color: #36393f;
+  flex-grow: 1;
+  padding: 30px;
+  color: white;
+  overflow-y: auto;
+}
+
+.reprimand-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #2f3136;
+}
+
+.reprimand-table th, .reprimand-table td {
+  border: 1px solid #4f545c;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.reprimand-table th {
+  background-color: #202225;
+  color: #b9bbbe;
+  font-weight: bold;
+}
+
+.reprimand-table tbody tr:hover {
+  background-color: #3a3d44;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+.status-активен { background-color: #f0b232; }
+.status-просрочен { background-color: #f04747; }
+.status-отработан { background-color: #43b581; }
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-primary {
+  background-color: #43b581; /* Зеленый */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button-primary:hover {
+  background-color: #3aa070;
+}
+
+.button-secondary {
+    background-color: #72767d; /* Серый */
+}
+.button-secondary:hover {
+    background-color: #62656b;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #36393f;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b9bbbe;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #202225;
+    border: 1px solid #1a1b1e;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box; /* Важно, чтобы padding не ломал ширину */
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  color: #b9bbbe;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.action-button:hover {
+  color: white;
+}
+
+.button-accept:hover {
+  color: #43b581; /* Зеленый при наведении */
+}
+.button-delete:hover {
+  color: #f04747; /* Красный при наведении */
+}
+
+.logo-link {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.settings-link {
+    color: #b9bbbe;
+    font-size: 24px;
+    transition: color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-link:hover {
+    color: white;
+    transform: rotate(30deg);
+}
+
+.form-group textarea { /* ... такие же стили, как у input ... */ }
+.button-cancel {
+    background-color: #4f545c;
+    color: #dcddde;
+    /* ... остальные стили как у других кнопок ... */
+}
+.button-cancel:hover { background-color: #5d6269; }

@@ -1,0 +1,35 @@
+.charter-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px); /* Высота контейнера с учетом хедера и паддингов */
+}
+
+/* Стили для редактора */
+.editor-wrapper {
+    flex-grow: 1; /* Занимает все доступное пространство */
+    background-color: #fff; /* Белый фон для читаемости */
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden; /* Чтобы скругленные углы работали */
+}
+
+.ql-toolbar.ql-snow {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ql-container.ql-snow {
+    height: calc(100% - 42px); /* Высота редактора минус высота тулбара */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Если устав только для чтения, делаем его похожим на обычный текст */
+.ql-container.ql-snow[data-read-only="true"] {
+    border: none;
+}
+
+.ql-editor {
+    font-size: 16px;
+    line-height: 1.6;
+}

@@ -1,0 +1,50 @@
+.settings-container {
+    padding: 30px;
+}
+
+.settings-container p {
+    font-size: 14px;
+    color: #b9bbbe;
+}
+
+.permissions-table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.permissions-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #2f3136;
+}
+
+.permissions-table th, .permissions-table td {
+    border: 1px solid #4f545c;
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.permissions-table th {
+    background-color: #202225;
+    color: #b9bbbe;
+}
+
+.permissions-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.permissions-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.save-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 10px;
+}

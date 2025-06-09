@@ -1,0 +1,22 @@
+.logs-container {
+  padding: 30px;
+}
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #2f3136;
+}
+.logs-table th, .logs-table td {
+  border: 1px solid #4f545c;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: top;
+}
+.logs-table th {
+  background-color: #202225;
+  color: #b9bbbe;
+}
+.logs-table td:first-child {
+  white-space: nowrap;
+}
